@@ -1,0 +1,38 @@
+@import 'reset';
+@import 'variables';
+@import 'utilities';
+@import 'elements/buttons';
+
+body {
+  height: 100vh;
+  background-color: $body-gradient;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+.change-color-btn {
+  width: 160px;
+  height: 160px;
+  background: white;
+  border-radius: 100%;
+  box-shadow: $shadow-grey-soft;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    max-width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+  }
+}
