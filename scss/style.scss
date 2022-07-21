@@ -1,11 +1,12 @@
 @import 'reset';
-@import 'variables';
-@import 'utilities';
-@import 'elements/buttons';
 
 body {
   height: 100vh;
-  background-color: $body-gradient;
+  background-color: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(243, 243, 243, 1) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +19,7 @@ body {
   height: 160px;
   background: white;
   border-radius: 100%;
-  box-shadow: $shadow-grey-soft;
+  box-shadow: 0 10px 25px rgba(124, 130, 141, 0.2);
   position: relative;
   cursor: pointer;
   transition: all 0.25s ease-out;

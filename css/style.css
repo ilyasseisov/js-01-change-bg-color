@@ -1,53 +1,21 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Urbanist', sans-serif;
-}
-
-.fw-400 {
-  font-weight: 400;
-}
-
-.fw-400-i {
-  font-weight: 400;
-  font-style: italic;
-}
-
-.fw-900 {
-  font-weight: 900;
-}
-
-.btn {
-  padding: 16px;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  text-align: center;
-  border-radius: 9px;
-  position: relative;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  box-sizing: border-box;
 }
 
 body {
   height: 100vh;
-  background-color: radial-gradient(circle, white 70%, #f3f3f3 100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: radial-gradient(
+    circle,
+    rgb(255, 255, 255) 70%,
+    rgb(243, 243, 243) 100%
+  );
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 750ms !important;
+  justify-content: center;
+  align-items: center;
   transition: all 750ms !important;
-  -webkit-transition-delay: 0 !important;
-          transition-delay: 0 !important;
+  transition-delay: 0 !important;
 }
 
 .change-color-btn {
@@ -55,29 +23,19 @@ body {
   height: 160px;
   background: white;
   border-radius: 100%;
-  -webkit-box-shadow: 0 10px 25px rgba(124, 130, 141, 0.2);
-          box-shadow: 0 10px 25px rgba(124, 130, 141, 0.2);
+  box-shadow: 0 10px 25px rgba(124, 130, 141, 0.2);
   position: relative;
   cursor: pointer;
-  -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-
 .change-color-btn:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
-
 .change-color-btn img {
   max-width: 70%;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  transform: translate(-50%, -50%);
+  user-select: none;
 }
-/*# sourceMappingURL=style.css.map */
