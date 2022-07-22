@@ -6,16 +6,12 @@
 
 body {
   height: 100vh;
-  background-color: radial-gradient(
-    circle,
-    rgb(255, 255, 255) 70%,
-    rgb(243, 243, 243) 100%
-  );
+  background-color: radial-gradient(circle, rgb(255, 255, 255) 70%, rgb(243, 243, 243) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
+  transition: all 750ms;
+  transition-delay: 0;
 }
 
 .change-color-btn {

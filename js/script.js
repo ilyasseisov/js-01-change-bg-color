@@ -1,12 +1,12 @@
 // Variables
 const colors = ['#7b68ee', '#eb3dae', '#f7ce51', '#5bc5fa'];
-let colorNumber = 0;
+let colorIndex = 0;
 const button = document.querySelector('.change-color-btn');
 
 // Functions
 const changeColor = () => {
-  document.body.style.backgroundColor = colors[colorNumber];
-  colorNumber < colors.length - 1 ? colorNumber++ : (colorNumber = 0);
+  document.body.style.backgroundColor = colors[colorIndex];
+  colorIndex < colors.length - 1 ? colorIndex++ : (colorIndex = 0);
 };
 
 // Event Listeners
